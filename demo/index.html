@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Just SideNav</title>
+	<meta content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=0" name="viewport">
+	<meta name="theme-color" content="#52b6ea">
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="../dist/css/style.css">
+</head>
+<body>
+
+<div style="display: none">
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+			<symbol id="icon-close" viewBox="0 0 24 24">
+				<title>close</title>
+				<path d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z"></path>
+			</symbol>
+			<symbol id="icon-menu" viewBox="0 0 24 24">
+				<title>menu</title>
+				<path d="M3 6h18v2.016h-18v-2.016zM3 12.984v-1.969h18v1.969h-18zM3 18v-2.016h18v2.016h-18z"></path>
+			</symbol>
+		</defs>
+	</svg>
+</div>
+
+<header class="header">
+	<button class="js-menu-show header__menu-toggle">
+		<svg class="icon">
+			<use xlink:href="#icon-menu"></use>
+		</svg>
+	</button>
+</header>
+
+<main>
+	<section style="background: url(https://images.unsplash.com/photo-1482406611936-43ea538e39d4?dpr=2&auto=format&fit=crop&w=1500&h=994&q=80&cs=tinysrgb&crop=&bg=) no-repeat center center;background-size: cover; background-attachment: fixed; padding-bottom: 25%;">
+
+	</section>
+</main>
+
+<aside class="js-side-nav side-nav">
+	<nav class="js-side-nav-wrap side-nav__wrap">
+		<button class="js-menu-hide side-nav__hide">
+			<svg class="icon">
+				<use xlink:href="#icon-close"></use>
+			</svg>
+		</button>
+		<header class="side-nav__header">
+			<div class="side-nav__header-brand">
+				<div class="side-nav__header-brand-name">JS</div>
+				<div class="side-nav__header-brand-slogan">Just Script</div>
+			</div>
+			<div class="side-nav__header-title">
+				Just Side Nav
+			</div>
+		</header>
+		<ul class="js-side-nav-content side-nav__content">
+			<li>
+				<a href="#">One</a>
+			</li>
+			<li>
+				<a href="#">Two</a>
+				<ul>
+					<li>
+						<a href="#">One</a>
+					</li>
+					<li>
+						<a href="#">Two</a>
+					</li>
+					<li>
+						<a href="#">Three</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Three</a>
+			</li>
+			<li>
+				<a href="#">Four</a>
+			</li>
+		</ul>
+	</nav>
+</aside>
+
+
+<script src="../sources/js/just-side-nav-es6.js"></script>
+</body>
+</html>
